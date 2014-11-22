@@ -1,0 +1,19 @@
+{
+  "name": "trackingRealWorldWebPerformance",
+  "version": "1.0.0",
+  "description": "CI demos for my Tracking Real World Web Performance presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nik Molnar",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-phantomas": "^0.10.0",
+    "grunt-wpt": "^2.0.5",
+    "gulp": "^3.8.10",
+    "gulp-grunt": "^0.5.2",
+    "psi": "^0.1.5"
+  }
+}
