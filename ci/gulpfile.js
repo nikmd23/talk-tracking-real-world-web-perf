@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
+    grunt = require('gulp-grunt')(gulp),
     psi = require('psi'),
-    grunt = require('gulp-grunt')(gulp);
+    tmi = require('tmi');
 
 gulp.task('default', ['psi', 'wpt', 'phantomas']);
 
@@ -13,6 +14,15 @@ gulp.task('psi', function (cb) {
 	}, cb);
 });
 
+gulp.task('tmi', function () {
+    tmi({
+        nokey: 'true',
+        url: 'http://mascots-staging.azurewebsites.net/',
+        strategy: 'desktop',  // optional
+        threshold: 90       // optional
+    });
+});
+
 gulp.task('phantomas', ['grunt-phantomas']);
 
-gulp.task('wpt', ['grunt-wpt']);
+gulp.task('perfbudget', ['grunt-perfbudget']);

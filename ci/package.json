@@ -10,10 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-perfbudget": "^0.1.6",
     "grunt-phantomas": "^0.10.0",
-    "grunt-wpt": "^2.0.5",
     "gulp": "^3.8.10",
     "gulp-grunt": "^0.5.2",
-    "psi": "^0.1.5"
+    "psi": "^0.1.5",
+    "tmi": "^0.2.2"
   }
 }
