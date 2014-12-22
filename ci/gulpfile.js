@@ -14,13 +14,13 @@ gulp.task('psi', function (cb) {
 	}, cb);
 });
 
-gulp.task('tmi', function () {
+gulp.task('tmi', function (cb) {
     tmi({
         nokey: 'true',
         url: 'http://mascots-staging.azurewebsites.net/',
         strategy: 'desktop',  // optional
         threshold: 90       // optional
-    });
+    }, cb);
 });
 
 gulp.task('phantomas', ['grunt-phantomas']);
