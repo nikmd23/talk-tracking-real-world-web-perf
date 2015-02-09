@@ -24,7 +24,9 @@ module.exports = function(grunt) {
                     buildUi: true,
                     timeout: 1200,
                     assertions: {
-                        biggestLatency: 3000
+                        biggestLatency: 3000,
+			timeToFirstByte: 1500,
+			timeBackend: 25
                     }
                 }
             }
